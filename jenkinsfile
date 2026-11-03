@@ -4,7 +4,7 @@ pipeline{
             stage('Download')
             {
                 steps{
-                    git 'https://github.com/IntelliqDevops/maven.git'
+                    git 'https://github.com/Thanneerupavankumar/maven10.git'
                 }
             }
             stage('build')
@@ -22,7 +22,7 @@ pipeline{
             stage('Testing')
             {
                 steps{
-                    git 'https://github.com/IntelliqDevops/FunctionalTesting.git'
+                    git 'https://github.com/Thanneerupavankumar/f-testing.git'
                     sh 'java -jar /var/lib/jenkins/workspace/declarative/testing.jar'
                     
                 }
